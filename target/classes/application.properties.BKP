@@ -1,0 +1,16 @@
+#database
+spring.datasource.url=jdbc:h2:mem:marvel;DATABASE_TO_UPPER=false;DB_CLOSE_DELAY=-1
+spring.datasource.username=sa
+spring.datasource.password=password
+spring.datasource.driver-class-name=org.h2.Driver
+spring.h2.console.enabled=true
+#jpa
+#spring.jpa.hibernate.ddl-auto=none
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.jpa.properties.hibernate.event.merge.entity_copy_observer=allow
+#http
+rest.marvel.baseurl=https://gateway.marvel.com:443/v1/public/
+rest.key.public=c366f32a251ade0fe61ae094db6f2719
+rest.key.private=b59f70f97279ee1ca534909c8defe1ff560b58a1
+#timer
+rest.cron.expression=${0 0 0 * * *}
